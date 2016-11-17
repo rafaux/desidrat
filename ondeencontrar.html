@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+<title>Desidrat</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,700,700i" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+<link rel="stylesheet" type="text/css" href="stylesheets/fonts/stylesheet.css" />
+<script type="text/javascript" src="javascripts/libs/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="javascripts/libs/migrate.js"></script>
+<script type="text/javascript" src="javascripts/core.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCy0zYdSkS3UtBTh-Sia-hPWpOAQ-4fpVM"></script>        
+<script type="text/javascript">
+   // Onde encontrar
+   google.maps.event.addDomListener(window, 'load', init);
+   function init() {
+       var mapOptions = {
+           zoom: 12,
+           center: new google.maps.LatLng(-23.5386265,-46.6412423),
+           styles: [{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"on"},{"saturation":-100},{"lightness":20}]},{"featureType":"road","elementType":"all","stylers":[{"visibility":"on"},{"saturation":-100},{"lightness":40}]},{"featureType":"water","elementType":"all","stylers":[{"visibility":"on"},{"saturation":-10},{"lightness":30}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"visibility":"simplified"},{"saturation":-60},{"lightness":10}]},{"featureType":"landscape.natural","elementType":"all","stylers":[{"visibility":"simplified"},{"saturation":-60},{"lightness":60}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"},{"saturation":-100},{"lightness":60}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"},{"saturation":-100},{"lightness":60}]}]
+       };
+       var mapElement = document.getElementById('onde');
+       var map = new google.maps.Map(mapElement, mapOptions);
+   }
+</script>
+</head>
+
+<body>
+<header id="header" class="header-b">
+   <hgroup>
+      <h1><a href="" title="Desidrat">Desidrat</a></h1>
+      <nav>
+         <ul>
+            <li><a href="" title="Empresa">Empresa</a></li>
+            <li><a href="" title="Linhas de Produtos">Linhas de Produtos</a></li>
+            <li><a href="" title="Controle de Umidade">Controle de Umidade</a></li>
+            <li><a href="" title="Suporte">Suporte</a></li>
+            <li><a href="" title="Onde Comprar">Onde Comprar</a></li>
+         </ul>
+         <span class="shop"><a href="" title="Shop: 1 item"><b>Shop</b><strong>1</strong></a></span>
+         <span class="search">Buscar</span>
+      </nav>
+   </hgroup>
+</header><!--end id header-->
+
+<section id="onde">
+</section><!--end id onde-->
+
+<footer id="onde-info">
+   <div class="container">
+      <input type="text" placeholder="Digite a Rua, Bairro, Cidade ou Estado" />
+      <nav>
+         <ul>
+            <li class="l">
+               <strong>Desidrat em todo o Brasil</strong>
+               <p>Os produtos Desidrat estão disponíveis para você em todo o Brasil. Para saber onde encontrar o ponto de venda mais próximo use a busca acima.</p>
+            </li>
+            <li class="r">
+               <strong>Visite nosso showroom</strong>
+               <address>Rua João de Paula Franco, 263 &bull; Interlagos<br />São Paulo/SP &bull; CEP 04775-165</address>
+            </li>
+         </ul>
+      </nav>
+   </div><!--end class container-->
+</footer><!--end id onde-info-->
+</body>
+
+</html>
